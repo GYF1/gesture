@@ -1,0 +1,3 @@
+javascript pinch zoom
+http://stackoverflow.com/questions/10802176/pinch-to-zoom-with-css3
+http://stackoverflow.com/questions/11183174/simplest-way-to-detect-a-pinch

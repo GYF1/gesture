@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>pinch-zoom-demo</title>
+</head>
+<body>
+<div id="pinchPanel">
+  <p>
+    <span>2015年8月12日晚11时20分许，天津港国际物流中心区域内瑞海公司所属危险品仓库发生爆炸，截至8月13日19时，此次爆炸事故共造成50人死亡；住院治疗701人，其中重症伤员70人。</span>
+  </p>
+
+  <p>
+    一位知情人透露，在爆炸事故发生后第一时间，天津市公安局塘沽分局就调集警力救援，同时布置刑侦刑警重点控制瑞海企业负责人，展开定位抓捕工作。至13日7时，警方就已经控制了10人，其中4人在医院，6人已被刑拘，关押在天津市第一看守所。</p>
+
+  <p>
+    《财经》记者获悉，截至记者发稿时，瑞海国际被警方控制的人有，<strong>瑞海国际实际控制人于学伟、董事长李亮、副董事长曹海军、财务总监宋齐、总经理只峰、主管安保的副总尚庆森、副总刘振国、操作部长贝胜强和李某某等人。</strong>
+  </p>
+
+  <p>8月17日，天津市看守所一位干警说，瑞海公司的事情已经被最高层关注，所有人都不敢多说一句话。</p>
+
+  <p>公开资料显示，瑞海国际注册基本1亿元，公司法人只峰，其中李亮出资5500万元，持股55%，舒铮出资4500万元，持股45%。经调查证实，上述几人都是隐形股东，而该公司的实际控制人，则由董社轩和于学伟中化前员工组成。</p>
+
+  <p><strong>相关新闻</strong></p>
+
+  <p>#快讯#据了解，瑞海公司董事长于学伟&nbsp;副董事长董社轩等10人在13日上午已被控制。（记者&nbsp;马博）&nbsp;</p>
+</div>
+
+<script>
+  document.getElementById('pinchPanel').addEventListener('gestureend', function(e) {
+    if (e.scale < 1.0) {
+      alert('缩小');
+      // User moved fingers closer together
+    } else if (e.scale > 1.0) {
+      alert('放大');
+      // User moved fingers further apart
+    }
+  }, false);
+</script>
+</body>
+</html>
